@@ -3,8 +3,8 @@
 // @author      Aly
 // @description Switches font based on difficulty of WK review item
 // @run-at      document-end
+// @include     https://www.wanikani.com/dashboard
 // @match       https://www.wanikani.com/subjects/review*
-// @match       http://www.wanikani.com/subjects/review*
 // @version     1.0
 // @grant       none
 // @license     MIT
