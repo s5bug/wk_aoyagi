@@ -76,8 +76,11 @@
             if (e.detail && e.detail.subject && e.detail.subject.id) {
                 const item_id = e.detail.subject.id;
                 const srs = id_to_srs[item_id] || 0;
-                if (srs >= 7) {
-                    // randomize between normal, gyousho, or sousho
+                if (srs >= 8) {
+                    // always be sousho
+                    ruleFns[2]()
+                } else if (srs >= 7) {
+                    // randomize between gyousho or sousho
                     ruleFns[1 + Math.floor(Math.random() * 2)]()
                 } else if (srs >= 5) {
                     ruleFns[Math.floor(Math.random() * 2)]()
