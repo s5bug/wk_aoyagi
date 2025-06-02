@@ -5,9 +5,10 @@
 // @run-at      document-end
 // @include     https://www.wanikani.com/dashboard
 // @match       https://www.wanikani.com/subjects/review*
+// @match       https://www.wanikani.com/subjects/extra_study*
 // @version     1.0
-// @grant       none
 // @license     MIT
+// @grant       GM_getResourceURL
 // @resource    gyousho    https://github.com/s5bug/wk_aoyagi/raw/refs/heads/main/KouzanGyoushoOTF.otf
 // @resource    sousho     https://github.com/s5bug/wk_aoyagi/raw/refs/heads/main/KouzanSoushoOTF.otf
 // ==/UserScript==
