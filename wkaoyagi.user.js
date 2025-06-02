@@ -3,6 +3,7 @@
 // @author      Aly
 // @description Switches font based on difficulty of WK review item
 // @run-at      document-end
+// @include     https://www.wanikani.com
 // @include     https://www.wanikani.com/dashboard
 // @match       https://www.wanikani.com/subjects/review*
 // @match       https://www.wanikani.com/subjects/extra_study*
