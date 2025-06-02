@@ -4,6 +4,7 @@
 // @description Switches font based on difficulty of WK review item
 // @run-at      document-end
 // @include     https://www.wanikani.com
+// @include     https://www.wanikani.com/
 // @include     https://www.wanikani.com/dashboard
 // @match       https://www.wanikani.com/subjects/review*
 // @match       https://www.wanikani.com/subjects/extra_study*
@@ -77,7 +78,7 @@
                 const srs = id_to_srs[item_id] || 0;
                 if (srs >= 7) {
                     // randomize between normal, gyousho, or sousho
-                    ruleFns[Math.floor(Math.random() * 3)]()
+                    ruleFns[1 + Math.floor(Math.random() * 2)]()
                 } else if (srs >= 5) {
                     ruleFns[Math.floor(Math.random() * 2)]()
                 } else {
