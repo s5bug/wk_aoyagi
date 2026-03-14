@@ -5,7 +5,6 @@
 // @run-at      document-end
 // @match       https://www.wanikani.com/*
 // @match       https://preview.wanikani.com/*
-// @require     https://update.greasyfork.org/scripts/38582/Wanikani%20Open%20Framework.user.js
 // @version     1.2
 // @license     MIT
 // @grant       GM_getResourceURL
