@@ -5,12 +5,14 @@
 // @run-at      document-end
 // @match       https://www.wanikani.com/*
 // @match       https://preview.wanikani.com/*
-// @version     1.1
+// @require     https://update.greasyfork.org/scripts/38582/Wanikani%20Open%20Framework.user.js
+// @version     1.2
 // @license     MIT
 // @grant       GM_getResourceURL
 // @grant       window.onurlchange
 // @resource    gyousho    https://github.com/s5bug/wk_aoyagi/raw/refs/heads/main/KouzanGyoushoOTF.otf
 // @resource    sousho     https://github.com/s5bug/wk_aoyagi/raw/refs/heads/main/KouzanSoushoOTF.otf
+// @downloadURL https://github.com/s5bug/wk_aoyagi/raw/refs/heads/main/wkaoyagi.user.js
 // ==/UserScript==
 
 (function() {
@@ -55,7 +57,6 @@
     }
 
     window.addEventListener("willShowNextQuestion", e => {
-        console.log("AAAAAA")
         if (e.detail && e.detail.subject && e.detail.subject.id) {
             const item_id = e.detail.subject.id;
             const srs = id_to_srs[item_id] || 0;
